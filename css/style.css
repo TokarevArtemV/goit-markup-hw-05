@@ -43,7 +43,7 @@ ol {
 
 body {
   background-color: var(--white-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: var(--slate-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -172,7 +172,7 @@ img {
 }
 .section-solution-container {
   max-width: 496px;
-    align-items: center;
+  align-items: center;
   margin: 0 auto;
   margin-bottom: 48px;
 }
@@ -433,7 +433,7 @@ img {
   position: absolute;
   padding: 40px 32px;
   color: var(--cloud-color);
-    font-size: 16px;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   background-color: var(--iris-color);
@@ -536,6 +536,7 @@ img {
   left: 50%;
   width: 408px;
   min-height: 584px;
+  padding: 24px;
   transform: translate(-50%, -50%) scale(1);
   background-color: var(--dairy-color);
   border-radius: 4px;
@@ -578,4 +579,68 @@ img {
 }
 .backdrop.is-hidden .backdrop-body {
   transform: scale(0);
+}
+.backdrop-title {
+  width: 100%;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  text-align: center;
+  color: var(--navyblue-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+.modal-form-input-container {
+  padding: 0;
+  height: 58px;
+  position: relative;
+  margin-bottom: 8px;
+}
+.modal-input-icon {
+}
+.backdrop-label {
+  height: 14px;
+  margin-bottom: 4px;
+  color: var(--lightslate-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.04em;
+}
+.backdrop-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 0 0 38px;
+  border-radius: 4px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: transparent;
+}
+.backdrop-input:focus {
+  border-color: var(--iris-color);
+}
+.modal-input-icon {
+  position: absolute;
+  top: 0px;
+  left: 16px;
+}
+.form-textarea {
+  color: var(--navybluemodal-color);
+  width: 100%;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px; /* 116.667% */
+  letter-spacing: 0.48px;
+  border-radius: 4px;
+  border: 1px solid var(--navybluemodal-color);
+  outline-color: var(--navybluemodal-color);
+}
+.form-textarea::placeholder {
+  color: var(--navybluemodal-color);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.04em;
 }
