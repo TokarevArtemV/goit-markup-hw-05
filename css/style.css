@@ -475,7 +475,7 @@ img {
 .footer-container-logo {
   margin-right: 120px;
 }
-.footer-container-links {
+.container-links {
   margin-right: 80px;
 }
 .footer-container-links-list {
@@ -740,7 +740,7 @@ img {
 }
 
 .checkbox-label {
-    color: var(--lightslate-color);
+  color: var(--lightslate-color);
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
