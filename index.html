@@ -494,12 +494,17 @@
               type="checkbox"
               name="accept-terms"
               id="accept-terms"
-              class="checkbox-input"
+              class="checkbox-input visually-hidden"
             />
-            <label for="accept-terms" class="checkbox-label" required
-              >I accept the terms and conditions of the
-              <a href="" class="checkbox-label-link">Privacy Policy</a></label
-            >
+            <label for="accept-terms" class="checkbox-label" required>
+              <span class="checkbox-label-icon">
+                <svg class="accept-terms-icon" width="16" height="16">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the&nbsp
+              <a href="" class="checkbox-label-link">Privacy Policy</a>
+            </label>
           </div>
           <button
             data-modal-close

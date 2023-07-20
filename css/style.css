@@ -383,8 +383,7 @@ img {
   gap: 24px;
   margin-bottom: 72px;
 }
-.section-filters-item {
-}
+ 
 .filter-button {
   padding: 12px 24px;
   border: 1px solid var(--cornflower-color);
@@ -517,8 +516,7 @@ img {
 .footer-container-item:focus {
   background-color: var(--green-color);
 }
-.footer-container-subscribe {
-}
+
 .footer-container-subscribe-form {
   display: flex;
   align-items: center;
@@ -674,7 +672,8 @@ img {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop-input:focus {
+.backdrop-input:focus,
+.form-textarea:focus {
   border-color: var(--iris-color);
 }
 .backdrop-input:focus + .modal-input-icon {
@@ -686,12 +685,13 @@ img {
   height: 120px;
   padding: 8px 16px;
   font-size: 12px;
-  line-height: 1.17px; /* 116.667% */
+  line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
   border-radius: 4px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   resize: none;
   outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-textarea::placeholder {
   color: rgba(46, 47, 66, 0.4);
@@ -708,11 +708,40 @@ img {
 .checkbox-input {
   margin-right: 8px;
 }
+.checkbox-label-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-input:checked + .checkbox-label span {
+  background-color: var(--ocean-color);
+  fill: var(--cloud-color);
+  border: none;
+}
+
 .checkbox-label {
+  display: flex;
+  align-items: center;
   color: var(--lightslate-color);
   font-size: 12px;
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.04em;
+}
+.checkbox-label span {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  fill: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox-input:focus + .checkbox-label span {
+  border-color: var(--ocean-color);
 }
 .checkbox-label-link {
   color: var(--iris-color);
